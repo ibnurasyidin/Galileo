@@ -6,6 +6,7 @@
 
 
     <color name="grapeDark">#A8A8E5</color>
+    <color name="grapeLight">#eeeef9</color>
 
     <color name="white">#FFFFFF</color>
     <color name="blackStatus">#4B4B4B</color>
@@ -17,4 +18,5 @@
     <color name="sub_text">#bbbbbb</color>
     <color name="sub_text_grey">#787878</color>
     <color name="text">#242424</color>
+    <color name="sub_text_bcbc">#bcbcbc</color>
 </resources>

@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="0dp">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -13,7 +14,8 @@
         app:layout_collapseMode="pin"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:contentInsetStart="0dp">
+        app:contentInsetStart="0dp"
+        android:elevation="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,6 +52,14 @@
                     android:layout_toRightOf="@id/imv_logo"
                     android:layout_centerVertical="true"
                     />
+
+                <ImageView
+                    android:id="@+id/imv_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_burger_menu"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
             </RelativeLayout>
 
 
