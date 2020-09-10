@@ -19,11 +19,15 @@
     <color name="sub_text">#bbbbbb</color>
     <color name="sub_text_grey">#787878</color>
     <color name="text">#242424</color>
+
     <color name="sub_text_bcbc">#bcbcbc</color>
+
     <color name="black_line">#232323</color>
     <color name="text_black">#2B2B2B</color>
     <color name="text_black_5a5a">#5a5a5a</color>
     <color name="text_gray">#B9B9B9</color>
+    <color name="bg_gray">#F6F6F6</color>
 
     <color name="colorWhite">#FFFFFF</color>
+
 </resources>
