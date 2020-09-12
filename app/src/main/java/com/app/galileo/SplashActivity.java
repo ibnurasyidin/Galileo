@@ -14,14 +14,16 @@ public class SplashActivity extends AppCompatActivity {
 
     @BindView(R.id.imv_logo)
     ImageView m_imv_logo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         ButterKnife.bind(this);
-        m_imv_logo.animate().rotation(360).setDuration(6000).start();
+        m_imv_logo.animate().rotation(180).setDuration(3000).start();
         new Handler().postDelayed(() -> {
             startActivity(new Intent(SplashActivity.this, WelcomeScreen.class));
-        }, 6000);
+            finish();
+        }, 3000);
     }
 }
