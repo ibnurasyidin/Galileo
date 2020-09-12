@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+   <include
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       layout="@layout/action_bar"/>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:overScrollMode="never"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/dimen_15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ciao, Andrea"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_people"
+                        android:padding="8dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/bgx_circle_grape_dark"/>
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Il mio profilo"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sofia_pro_regular"
+                        android:textColor="@color/text_black_5a5a"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+
+
+                        android:src="@drawable/ic_round_arrow_forward_ios_24"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_recipe_dark"
+                        android:padding="8dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/bgx_circle_grape_dark"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Le mie fatture"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sofia_pro_regular"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/text_black_5a5a"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/sofia_pro_bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+
+
+                        android:src="@drawable/ic_round_arrow_forward_ios_24"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_wifi"
+                        android:padding="8dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/bgx_circle_grape_dark"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Le mie fatture"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sofia_pro_regular"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/text_black_5a5a"/>
+
+                    <TextView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:text="!"
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bgx_cirlce_red"
+                        android:gravity="center"
+                        android:layout_marginRight="3dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+
+
+
+                        android:src="@drawable/ic_round_arrow_forward_ios_24"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_card"
+                        android:padding="8dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/bgx_circle_grape_dark"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Paga online"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sofia_pro_regular"
+                        android:textColor="@color/text_black_5a5a"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+
+
+                        android:src="@drawable/ic_round_arrow_forward_ios_24"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_love"
+                        android:padding="8dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/bgx_circle_grape_dark"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Progetti sociali Galileo"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sofia_pro_regular"
+                        android:textColor="@color/text_black_5a5a"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+
+
+                        android:src="@drawable/ic_round_arrow_forward_ios_24"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_sale"
+                        android:padding="8dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/bgx_circle_grape_dark"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Offerte e servizi aggiuntivi"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sofia_pro_regular"
+                        android:textColor="@color/text_black_5a5a"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+
+
+                        android:src="@drawable/ic_round_arrow_forward_ios_24"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_clip_paper"
+                        android:padding="8dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/bgx_circle_grape_dark"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Modulistica"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sofia_pro_regular"
+                        android:textColor="@color/text_black_5a5a"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+
+
+                        android:src="@drawable/ic_round_arrow_forward_ios_24"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_refresh"
+                        android:padding="8dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/bgx_circle_grape_dark"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Addebito automatico in conto"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sofia_pro_regular"
+                        android:textColor="@color/text_black_5a5a"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+
+
+                        android:src="@drawable/ic_round_arrow_forward_ios_24"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="17dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_support"
+                        android:padding="8dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/bgx_circle_grape_dark"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Area Assistenza"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sofia_pro_regular"
+                        android:textColor="@color/text_black_5a5a"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+
+
+                        android:src="@drawable/ic_round_arrow_forward_ios_24"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
