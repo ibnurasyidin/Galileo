@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".activities.AuthActivity"></activity>
+        <activity android:name=".activities.Attivazione3Activity" />
+        <activity android:name=".activities.AttivazioneActivity" />
+        <activity android:name=".activities.WelcomeScreen" />
+        <activity android:name=".activities.SplashActivity">
         <activity android:name=".activities.HomePageActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,13 +24,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Attivazione3Activity"/>
-        <activity android:name=".AttivazioneActivity" />
-        <activity android:name=".WelcomeScreen" />
-        <activity android:name=".SplashActivity"/>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".activities.ScegliITuoiPianiActivity"/>
+        <activity android:name=".activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
 
+       
+        <activity android:name=".activities.Attivazione2Activity" />
 
     </application>
 

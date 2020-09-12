@@ -1,14 +1,16 @@
-package com.app.galileo;
+package com.app.galileo.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class SplashActivity extends AppCompatActivity {
+import com.app.galileo.R;
+
+public class AuthActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+        setContentView(R.layout.activity_auth);
     }
 }

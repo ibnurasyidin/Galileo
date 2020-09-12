@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AttivazioneActivity">
+    tools:context=".activities.AttivazioneActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -218,6 +218,7 @@
                 android:textSize="16sp"/>
 
             <Button
+                android:id="@+id/btn_conferma"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:background="@drawable/bg_green_rounded"
