@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:overScrollMode="never"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="@dimen/dimen_15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="La tua area assistenza"
+                android:textSize="24sp"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:textColor="@color/text_black"
+                android:layout_marginTop="31dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grapeDark"
+                android:text="Apri nuovo ticket"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:background="@drawable/bgx_edge_white"
+                android:layout_marginTop="24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Storico"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:textSize="16sp"
+                android:textColor="@color/text_black_5a5a"
+                android:layout_marginTop="41dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="21dp"
+                android:paddingHorizontal="18dp"
+                android:paddingBottom="23dp"
+                android:background="@drawable/bgx_edge_grey"
+                android:layout_marginTop="17dp"
+                android:elevation="3dp">
+
+                <TextView
+                    android:id="@+id/velocita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Velocità di connessione 29mbps"
+                    android:fontFamily="@font/sofia_pro_bold"
+                    android:textColor="@color/text_black_5a5a"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/velocita"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/sofia_pro_regular"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_black_5a5a"
+                        android:text="Giu 22, 2020 12:39 PM"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="APERTO"
+                        android:background="@drawable/bgx_strocio_aperto_green"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:paddingHorizontal="9dp"
+                        android:paddingVertical="7dp"
+                        android:fontFamily="@font/sofia_pro_bold"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_round_arrow_forward_ios_24"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="21dp"
+                android:paddingHorizontal="18dp"
+                android:paddingBottom="23dp"
+                android:background="@drawable/bgx_edge_grey"
+                android:layout_marginTop="17dp"
+                android:elevation="3dp">
+
+                <TextView
+                    android:id="@+id/configuarazione"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Configuarazione della linea da errore"
+                    android:fontFamily="@font/sofia_pro_bold"
+                    android:textColor="@color/text_black_5a5a"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/configuarazione"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/sofia_pro_regular"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_black_5a5a"
+                        android:text="Feb 16, 2020 07:32 AM"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RISPOSTO"
+                        android:background="@drawable/bgx_strocio_risposto_yellow"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:paddingHorizontal="9dp"
+                        android:paddingVertical="7dp"
+                        android:fontFamily="@font/sofia_pro_bold"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_round_arrow_forward_ios_24"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="21dp"
+                android:paddingHorizontal="18dp"
+                android:paddingBottom="23dp"
+                android:background="@drawable/bgx_edge_grey"
+                android:layout_marginTop="17dp"
+                android:elevation="3dp">
+
+                <TextView
+                    android:id="@+id/connessione"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connessione interrotta problema cavi..."
+                    android:fontFamily="@font/sofia_pro_bold"
+                    android:textColor="@color/text_black_5a5a"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/connessione"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="@font/sofia_pro_regular"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_black_5a5a"
+                        android:text="Feb 16, 2020 07:32 AM"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CHIUSO"
+                        android:background="@drawable/bgx_strocio_chiuso_black"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:paddingHorizontal="9dp"
+                        android:paddingVertical="7dp"
+                        android:fontFamily="@font/sofia_pro_bold"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_round_arrow_forward_ios_24"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
