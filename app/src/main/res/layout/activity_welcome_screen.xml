@@ -5,50 +5,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_gradient"
-    tools:context=".WelcomeScreen">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:src="@drawable/logo_white"/>
-    <TextView
-        android:id="@+id/desc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Seleziona operatore"
-        android:fontFamily="sans-serif"
-        android:textSize="16sp"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/colorWhite"
-        android:layout_marginTop="250dp"/>
-    <ImageButton
-        android:id="@+id/lessinia"
+    tools:context=".activities.WelcomeScreen">
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingVertical="15dp"
-        android:layout_marginTop="40dp"
-        android:layout_alignTop="@+id/desc"
-        android:src="@drawable/logopayoff_1"
+        android:layout_height="match_parent">
 
-        android:background="@color/colorWhite"
-        android:layout_marginHorizontal="40dp"
-        />
-    <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingVertical="20dp"
-        android:layout_marginTop="100dp"
-        android:layout_alignTop="@+id/lessinia"
-        android:src="@drawable/ic_nawgare"
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/logo_white" />
 
-        android:background="@color/colorWhite"
-        android:layout_marginHorizontal="40dp"
-        />
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:fontFamily="sans-serif"
+            android:text="Seleziona operatore"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
 
-</RelativeLayout>
+        <ImageButton
+            android:id="@+id/imb_lessinia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/desc"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_white_rounded"
+            android:paddingVertical="15dp"
+            android:src="@drawable/logopayoff_1" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imb_lessinia"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/bg_white_rounded"
+            android:paddingVertical="20dp"
+            android:src="@drawable/ic_nawgare" />
+
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

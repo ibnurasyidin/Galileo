@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:overScrollMode="never"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/dimen_15">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Torna alla home"
+                android:textColor="@color/grapeDark"
+                android:drawableLeft="@drawable/ic_round_arrow_back_ios_24"
+                android:gravity="center|left"
+                android:drawablePadding="@dimen/dimen_15"
+                android:fontFamily="@font/sofia_pro_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I tuoi piani"
+                android:textSize="24sp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:textColor="@color/text"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgx_edge_grape"
+                android:orientation="vertical"
+                android:layout_marginTop="26dp"
+                android:paddingTop="29dp"
+                android:paddingBottom="25dp"
+                android:paddingHorizontal="18dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3778525788"
+                    android:fontFamily="@font/sofia_pro_bold"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="9dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LESS - RESS - 15/2"
+                    android:textSize="24sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgx_edge_grey"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:paddingTop="29dp"
+                android:paddingBottom="25dp"
+                android:paddingHorizontal="18dp"
+                android:elevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3778525788"
+                        android:fontFamily="@font/sofia_pro_bold"
+                        android:textColor="@color/text_black_5a5a"
+                        android:textSize="16sp"
+
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:text="!"
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bgx_cirlce_red"
+                        android:gravity="center"
+                        android:layout_marginRight="3dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="!Fatture scadute"
+                        android:fontFamily="@font/sofia_pro_bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp"
+
+                        />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LESS - RESS - 30/4"
+                    android:textSize="24sp"
+                    android:textColor="@color/text_black_5a5a"
+                    android:layout_marginTop="9dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgx_edge_grey"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:paddingTop="29dp"
+                android:paddingBottom="25dp"
+                android:paddingHorizontal="18dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Linea Internet"
+                    android:fontFamily="@font/sofia_pro_bold"
+                    android:textColor="@color/text_black_5a5a"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="9dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LESS - RESS - 100/6"
+                    android:textSize="24sp"
+                    android:textColor="@color/text_black_5a5a"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
