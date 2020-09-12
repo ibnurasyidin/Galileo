@@ -1,29 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    app:layoutDescription="@xml/activity_splash_scene"
     tools:context=".activities.SplashActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
 
-        <ImageView
-            android:id="@+id/imv_logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/logo_text"
-            android:src="@drawable/logo" />
+    <ImageView
+        android:id="@+id/imv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/logo_text"
+        android:contentDescription="@string/app_name"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:src="@drawable/logo"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="345dp" />
 
-        <ImageView
-            android:id="@+id/logo_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="50dp"
-            android:src="@drawable/logo_text" />
+    <ImageView
+        android:id="@+id/logo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:paddingStart="70dp"
+        android:paddingEnd="10dp"
+        android:src="@drawable/logo_text"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="344dp" />
 
-    </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.motion.widget.MotionLayout>

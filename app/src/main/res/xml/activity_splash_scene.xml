@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@id/imv_logo_end"
+        motion:duration="3000"
+        motion:constraintSetStart="@id/imv_logo">
+       <KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/imv_logo"
+               motion:framePosition="0"
+               android:rotation="360" />
+           <KeyAttribute
+               motion:motionTarget="@+id/imv_logo" />
+       </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/imv_logo" />
+    <ConstraintSet android:id="@+id/imv_logo_end" />
+
+</MotionScene>
