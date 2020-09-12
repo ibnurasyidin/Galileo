@@ -1,4 +1,4 @@
-package com.app.galileo;
+package com.app.galileo.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.os.Handler;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.app.galileo.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

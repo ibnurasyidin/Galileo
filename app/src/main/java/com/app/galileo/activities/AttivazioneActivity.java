@@ -1,10 +1,12 @@
-package com.app.galileo;
+package com.app.galileo.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.app.galileo.R;
 
 public class AttivazioneActivity extends AppCompatActivity {
 

@@ -1,10 +1,12 @@
-package com.app.galileo;
+package com.app.galileo.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.app.galileo.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
