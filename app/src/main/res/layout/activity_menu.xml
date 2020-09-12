@@ -32,6 +32,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Ciao, Andrea"
+                    android:textSize="24dp"
+                    android:fontFamily="@font/sofia_pro_regular"
+                    android:textColor="@color/text_black_5a5a"
                     android:layout_marginBottom="10dp"/>
 
                 <LinearLayout
@@ -89,7 +92,7 @@
                         android:text="Le mie fatture"
                         android:textSize="16sp"
                         android:fontFamily="@font/sofia_pro_regular"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginRight="10dp"
                         android:textColor="@color/text_black_5a5a"/>
 
                     <TextView
@@ -111,7 +114,6 @@
 
                         android:src="@drawable/ic_round_arrow_forward_ios_24"/>
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -134,29 +136,26 @@
                         android:text="Le mie fatture"
                         android:textSize="16sp"
                         android:fontFamily="@font/sofia_pro_regular"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginRight="10dp"
                         android:textColor="@color/text_black_5a5a"/>
 
                     <TextView
-                        android:layout_width="14dp"
-                        android:layout_height="14dp"
-                        android:text="!"
-                        android:textSize="10sp"
-                        android:textColor="@color/white"
-                        android:background="@drawable/bgx_cirlce_red"
-                        android:gravity="center"
-                        android:layout_marginRight="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_alert"
                         />
 
                     <ImageView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="14dp"
 
 
-
                         android:src="@drawable/ic_round_arrow_forward_ios_24"/>
                 </LinearLayout>
+
+
 
 
                 <LinearLayout
