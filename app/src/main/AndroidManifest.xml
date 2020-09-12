@@ -15,21 +15,19 @@
         <activity android:name=".activities.AttivazioneActivity" />
         <activity android:name=".activities.WelcomeScreen" />
         <activity android:name=".activities.SplashActivity">
-        <activity android:name=".activities.HomePageActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".activities.HomePageActivity"/>
         <activity android:name=".activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-
-       
         <activity android:name=".activities.Attivazione2Activity" />
+        <activity android:name=".activities.DettaglioSegnalazioniETiicket" />
+        <activity android:name=".activities.ScegliITuoiPianiActivity" />
 
     </application>
 
