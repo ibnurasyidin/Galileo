@@ -7,365 +7,112 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <include
-        layout="@layout/action_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fadingEdge="none"
-        android:fadingEdgeLength="0dp"
-        android:fillViewport="true"
-        android:overScrollMode="never"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+   <include
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       layout="@layout/action_bar"/>
 
 
-        <LinearLayout
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:overScrollMode="never"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18dp">
-
-
-                <androidx.viewpager.widget.ViewPager
-                    android:id="@+id/viewpager_promozione"
-                    android:layout_width="match_parent"
-                    android:layout_height="198dp"
-                    android:clipToPadding="false"
-                    android:nestedScrollingEnabled="false"
-                    android:overScrollMode="never"
-                    android:paddingHorizontal="@dimen/dimen_15"
-                    tools:targetApi="lollipop" />
-
-                <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
-                    android:id="@+id/dots_indicator"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/viewpager_promozione"
-                    android:layout_centerHorizontal="true"
-                    android:layout_margin="@dimen/dimen_15"
-                    app:dotsColor="#CECECE"
-                    app:dotsCornerRadius="5dp"
-                    app:dotsSize="6dp"
-                    app:dotsSpacing="3dp"
-                    app:dotsWidthFactor="3"
-                    app:progressMode="true"
-                    app:selectedDotColor="#000000" />
-
-            </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="13dp"
-                android:background="@drawable/bgx_edge_white"
-                android:elevation="3dp"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_15"
+                    android:text="Modulistica"
+                    android:fontFamily="@font/sofia_pro_regular"
+                    android:layout_marginBottom="18dp"
+                    android:textSize="24sp"
+                    android:textColor="@color/text_black_5a5a"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_15"
+                    android:text="Richiedi il modulo dalla lista sottostante e ti verrà inviato tramite e-mail in modo automatico"
+                    android:fontFamily="@font/sofia_pro_regular"
+                    android:layout_marginBottom="18dp"
+                    android:textColor="#262626"
+                    android:textSize="16sp"
+                    android:lineHeight="19dp"
+                    android:paddingBottom="38dp"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:background="@drawable/bgx_edge_white"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginBottom="17dp"
+                    android:paddingVertical="25dp">
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:paddingVertical="25dp"
-                        android:paddingLeft="32dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/sofia_pro_regular"
-                            android:text="Andrea Giordano"
-                            android:textColor="@color/text"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/sofia_pro_regular"
-                            android:text="Aziendale"
-                            android:textColor="@color/grapeDark"
-                            android:textSize="16sp" />
-
-
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/grapeLight" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:paddingVertical="25dp"
-                        android:paddingLeft="32dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/sofia_pro_regular"
-                            android:text="Il tuo piano"
-                            android:textColor="@color/text"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/sofia_pro_regular"
-                            android:text="04644254956"
-                            android:textColor="@color/grapeDark"
-                            android:textSize="16sp" />
-
-
-                    </LinearLayout>
+                        android:layout_marginHorizontal="@dimen/dimen_15"
+                        android:text="Carica Documento"
+                        android:fontFamily="@font/sofia_pro_regular"
+                        android:textColor="@color/grapeDark"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                         />
                 </LinearLayout>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/grapeLight"
+                    android:layout_marginHorizontal="@dimen/dimen_15"
+                    android:text="Formati accettati immagine e pdf < di 2mbite"
                     android:fontFamily="@font/sofia_pro_regular"
+                    android:textColor="#c7c7c7"
                     android:gravity="center"
-                    android:lineHeight="17sp"
-                    android:paddingVertical="13dp"
-                    android:text="LESS - RESS - 15/2"
-                    android:textColor="@color/grapeDark"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:layout_marginBottom="30dp"
+                    />
 
-                <LinearLayout
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recylerview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="25dp"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <ImageView
-                            android:id="@+id/ic_download"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="22dp"
-                            android:src="@drawable/ic_download" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_toEndOf="@id/ic_download"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="8dp"
-                                android:fontFamily="@font/sofia_pro_regular"
-                                android:text="DOWNLOAD"
-                                android:textColor="@color/sub_text_bcbc"
-                                android:textSize="11sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/sofia_pro_regular"
-                                android:text="15,00MB"
-                                android:textColor="@color/grapeDark"
-                                android:textSize="28sp" />
+                    android:layout_marginHorizontal="@dimen/dimen_15"
+                    />
 
 
-                        </LinearLayout>
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="25dp"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <ImageView
-                            android:id="@+id/ic_upload"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="22dp"
-                            android:src="@drawable/ic_upload" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_toEndOf="@id/ic_upload"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="8dp"
-                                android:fontFamily="@font/sofia_pro_regular"
-                                android:text="upload"
-                                android:textColor="@color/sub_text_bcbc"
-                                android:textSize="11sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/sofia_pro_regular"
-                                android:text="2,00MB"
-                                android:textColor="@color/grapeDark"
-                                android:textSize="28sp" />
 
 
-                        </LinearLayout>
-
-                    </RelativeLayout>
-
-                </LinearLayout>
 
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
-                android:layout_marginBottom="44dp"
-                android:elevation="3dp"
-                android:orientation="horizontal">
+        </androidx.core.widget.NestedScrollView>
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="7dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bgx_edge_red"
-                    android:padding="@dimen/dimen_15">
-
-                    <ImageView
-                        android:id="@+id/ic_recipe"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginLeft="-20dp"
-                        android:layout_toEndOf="@id/fatture_scadute"
-                        android:background="@drawable/bgx_cirlce_white"
-                        android:padding="@dimen/dimen_15"
-                        android:src="@drawable/ic_recipe" />
-
-                    <TextView
-                        android:id="@+id/fatture_scadute"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/ic_recipe"
-                        android:fontFamily="@font/sofia_pro_regular"
-                        android:text="!FATTURE SCADUTE"
-                        android:textColor="@color/white"
-                        android:textSize="13sp" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/fatture_scadute"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/money"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/sofia_pro_semi_bold"
-                            android:text="84,99"
-                            android:textColor="@color/white"
-                            android:textSize="28sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/sofia_pro_semi_bold"
-                            android:text="€"
-                            android:textColor="@color/white"
-                            android:textSize="13sp"
-
-                            />
-                    </LinearLayout>
-
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="7dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bgx_edge_white">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/ic_wifi"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentTop="true"
-                            android:layout_gravity="center"
-                            android:layout_marginBottom="@dimen/dimen_15"
-                            android:background="@drawable/bgx_cirlce_grape"
-                            android:padding="@dimen/dimen_15"
-                            android:src="@drawable/ic_wifi" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/sofia_pro_semi_bold"
-                            android:text="DIAGNOSTICA"
-                            android:textColor="@color/grapeDark"
-                            android:textSize="13sp" />
-
-                    </LinearLayout>
-
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/dimen_15"
-                android:fontFamily="@font/sofia_pro_semi_bold"
-                android:text="Esplora le News"
-                android:textSize="18sp" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recylerview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/dimen_15" />
-
-
-        </LinearLayout>
-
-    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_chat"
+        tools:ignore="VectorDrawableCompat" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
