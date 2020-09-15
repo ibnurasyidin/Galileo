@@ -1,7 +1,9 @@
 package com.app.galileo.activities;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
@@ -53,6 +55,21 @@ public class HomePageActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_piani) void piani(){
         Intent intent = new Intent(this,ScegliITuoiPianiActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.imv_menu)
+    void btn() {
+        //drawerLayout.openDrawer(GravityCompat.END);
+        Intent myIntent = new Intent(this, MenuActivity.class);
+        ActivityOptions options =
+                ActivityOptions.makeCustomAnimation(this, R.anim.fade_in, R.anim.fade_out);
+        this.startActivity(myIntent, options.toBundle());
+
+    }
+
+    @OnClick(R.id.btn_diagnostica) void btn_diagnostica(){
+        Intent intent = new Intent(this,VerificaLaTuaLineaActivity.class);
         startActivity(intent);
     }
 }
