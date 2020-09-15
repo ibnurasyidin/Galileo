@@ -44,8 +44,9 @@ dependencies {
     implementation 'com.jakewharton:butterknife:10.2.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
 
-
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta3'
     //dot viepager
+    //implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
     implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
 
 }
