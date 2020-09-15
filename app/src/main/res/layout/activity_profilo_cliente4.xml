@@ -147,7 +147,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="199.5dp">
+                android:layout_marginTop="199.5dp"
+                android:layout_marginBottom="38dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -164,7 +165,6 @@
                     android:layout_weight="0"
                     android:background="@drawable/bg_stroke_green_rounded"
                     android:fontFamily="@font/sofia_pro_regular"
-
                     android:text="Richiedi modifica"
                     android:textAllCaps="false"
                     android:textColor="@color/colorPrimary"
