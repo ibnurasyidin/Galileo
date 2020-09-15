@@ -126,6 +126,7 @@
                        android:textColor="@color/text_black"/>
 
                    <Button
+                       android:id="@+id/btn_avvio"
                        android:layout_below="@id/tv_description"
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
