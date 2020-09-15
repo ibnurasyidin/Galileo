@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginBottom="26dp"
+                android:lineSpacingExtra="5sp"
+                android:text="Test della linea"
+                android:textColor="#040404"
+                android:textSize="24sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title1"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="36dp"
+                android:background="@drawable/bg_white_rounded_7dp"
+                android:elevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/timeline_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="3.5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_circle_grey"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_verifica" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dp"
+                        android:fontFamily="@font/sofia_pro_semi_bold"
+                        android:lineSpacingExtra="3sp"
+                        android:text="Verifica la tua linea"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/vertical_line1"
+                    android:layout_width="2dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/timeline_header"
+                    android:layout_marginLeft="42.5dp"
+                    android:background="@color/colorAccent" />
+
+                <RelativeLayout
+                    android:id="@+id/dot1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vertical_line1"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/innerDot1"
+                        android:layout_width="9dp"
+                        android:layout_height="9dp"
+                        android:layout_marginVertical="3.5dp"
+                        android:layout_marginLeft="39dp"
+                        android:background="@drawable/bg_circle_grep" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="71dp"
+                        android:layout_below="@id/innerDot1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="42.5dp"
+                        android:background="@color/colorAccent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginRight="60.5dp"
+                        android:layout_toRightOf="@id/innerDot1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-3dp"
+                                android:fontFamily="@font/sofia_pro_regular"
+                                android:lineSpacingExtra="3sp"
+                                android:text="Verifica della linea"
+                                android:textColor="@color/bg_black3"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/sofia_pro_regular"
+                                android:lineSpacingExtra="3sp"
+                                android:text="100%"
+                                android:textColor="#dedede"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <SeekBar
+                            android:layout_width="match_parent"
+                            android:layout_height="6dp"
+                            android:layout_marginLeft="-14dp"
+                            android:layout_marginTop="15.5dp"
+                            android:layout_marginRight="-14dp"
+                            android:progress="100"
+                            android:progressDrawable="@drawable/bg_progressbar"
+                            android:thumb="@drawable/bg_thumb_progress" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14.5dp"
+                            android:drawableRight="@drawable/ic_smile"
+                            android:drawablePadding="5dp"
+                            android:lineSpacingExtra="2sp"
+                            android:text="Test superato"
+                            android:textAllCaps="true"
+                            android:textColor="#81e595"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dot2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dot1"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/innerDot2"
+                        android:layout_width="9dp"
+                        android:layout_height="9dp"
+                        android:layout_marginVertical="3.5dp"
+                        android:layout_marginLeft="39dp"
+                        android:background="@drawable/bg_circle_grep" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="167.38dp"
+                        android:layout_below="@id/innerDot2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="42.5dp"
+                        android:background="@color/colorAccent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginRight="60.5dp"
+                        android:layout_toRightOf="@id/innerDot2"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-3dp"
+                                android:fontFamily="@font/sofia_pro_regular"
+                                android:lineSpacingExtra="3sp"
+                                android:text="Potenza del segnale"
+                                android:textColor="@color/bg_black3"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/sofia_pro_regular"
+                                android:lineSpacingExtra="3sp"
+                                android:text="100%"
+                                android:textColor="#dedede"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <SeekBar
+                            android:layout_width="match_parent"
+                            android:layout_height="6dp"
+                            android:layout_marginLeft="-14dp"
+                            android:layout_marginTop="15.5dp"
+                            android:layout_marginRight="-14dp"
+                            android:progress="100"
+                            android:progressDrawable="@drawable/bg_progressbar_red"
+                            android:thumb="@drawable/bg_thumb_progress_red" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14.5dp"
+                            android:drawableRight="@drawable/ic_sad"
+                            android:drawablePadding="5dp"
+                            android:lineSpacingExtra="2sp"
+                            android:text="valore -92"
+                            android:textAllCaps="true"
+                            android:textColor="@color/bg_red"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_marginTop="15.5dp"
+                            android:layout_marginBottom="48dp"
+                            android:background="@drawable/bg_stroke_grape_rounded_3"
+                            android:fontFamily="@font/sofia_pro_regular"
+                            android:lineSpacingExtra="3sp"
+                            android:text="Apri un ticket"
+                            android:textAllCaps="false"
+                            android:textColor="#a8a8e5"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dot3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dot2"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/innerDot3"
+                        android:layout_width="9dp"
+                        android:layout_height="9dp"
+                        android:layout_marginVertical="3.5dp"
+                        android:layout_marginLeft="39dp"
+                        android:background="@drawable/bg_circle_grep" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="71dp"
+                        android:layout_below="@id/innerDot3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="42.5dp"
+                        android:background="@color/colorAccent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginRight="60.5dp"
+                        android:layout_toRightOf="@id/innerDot3"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-3dp"
+                                android:fontFamily="@font/sofia_pro_regular"
+                                android:lineSpacingExtra="3sp"
+                                android:text="Velocità di comando PING"
+                                android:textColor="@color/bg_black3"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/sofia_pro_regular"
+                                android:lineSpacingExtra="3sp"
+                                android:text="100%"
+                                android:textColor="#dedede"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <SeekBar
+                            android:layout_width="match_parent"
+                            android:layout_height="6dp"
+                            android:layout_marginLeft="-14dp"
+                            android:layout_marginTop="15.5dp"
+                            android:layout_marginRight="-14dp"
+                            android:progress="100"
+                            android:progressDrawable="@drawable/bg_progressbar_warning"
+                            android:thumb="@drawable/bg_thumb_progress" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14.5dp"
+                            android:drawableRight="@drawable/ic_warning_emoticon"
+                            android:drawablePadding="5dp"
+                            android:lineSpacingExtra="2sp"
+                            android:text="ping 124ms"
+                            android:textAllCaps="true"
+                            android:textColor="@color/bg_warning"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dot4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dot3"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/innerDot4"
+                        android:layout_width="9dp"
+                        android:layout_height="9dp"
+                        android:layout_marginVertical="3.5dp"
+                        android:layout_marginLeft="39dp"
+                        android:background="@drawable/bg_circle_grep" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginRight="60.5dp"
+                        android:layout_toRightOf="@id/innerDot4"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-3dp"
+                                android:fontFamily="@font/sofia_pro_regular"
+                                android:lineSpacingExtra="3sp"
+                                android:text="Velocità di connessione"
+                                android:textColor="@color/bg_black3"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/sofia_pro_regular"
+                                android:lineSpacingExtra="3sp"
+                                android:text="100%"
+                                android:textColor="#dedede"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <SeekBar
+                            android:layout_width="match_parent"
+                            android:layout_height="6dp"
+                            android:layout_marginLeft="-14dp"
+                            android:layout_marginTop="15.5dp"
+                            android:layout_marginRight="-14dp"
+                            android:progress="100"
+                            android:progressDrawable="@drawable/bg_progressbar_red"
+                            android:thumb="@drawable/bg_thumb_progress" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14.5dp"
+                            android:drawableRight="@drawable/ic_warning_emoticon"
+                            android:drawablePadding="5dp"
+                            android:lineSpacingExtra="2sp"
+                            android:text="velocita' 29mbps"
+                            android:textAllCaps="true"
+                            android:textColor="@color/bg_red"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_marginTop="15.5dp"
+                            android:layout_marginBottom="75dp"
+                            android:background="@drawable/bg_stroke_grape_rounded_3"
+                            android:fontFamily="@font/sofia_pro_regular"
+                            android:lineSpacingExtra="3sp"
+                            android:text="Apri un ticket"
+                            android:textAllCaps="false"
+                            android:textColor="#a8a8e5"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="27dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_circle_grep"
+                android:elevation="10dp"
+                android:src="@drawable/ic_chat_btn" />
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

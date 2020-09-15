@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_grep"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimen_15">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="2dp"
+                    android:background="@drawable/bg_white_text_rounded"
+                    android:elevation="3dp"
+                    android:lineSpacingExtra="3sp"
+                    android:paddingHorizontal="24dp"
+                    android:paddingVertical="7dp"
+                    android:text="Oggi"
+                    android:textColor="#9f9f9f"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_round_close" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/chat_box"
+                android:layout_marginBottom="34dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginRight="95dp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginRight="11dp"
+                        android:src="@drawable/ic_baseline_account_circle" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_msg_container_left"
+                            android:fontFamily="@font/sofia_pro_regular"
+                            android:lineSpacingExtra="3sp"
+                            android:paddingHorizontal="25dp"
+                            android:paddingVertical="18dp"
+                            android:text="Hey! Ciao Benvenuto"
+                            android:textColor="#707070"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sofia_pro_regular"
+                            android:lineSpacingExtra="2sp"
+                            android:text="ore 12:52"
+                            android:textColor="#a5a5a5"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="26dp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_msg_container_right"
+                            android:fontFamily="@font/sofia_pro_regular"
+                            android:lineSpacingExtra="3sp"
+                            android:paddingHorizontal="25dp"
+                            android:paddingVertical="18dp"
+                            android:text="Salve! Grazie mille, volevo
+sapere se ci fossero delle promozioni."
+                            android:textColor="#707070"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sofia_pro_regular"
+                            android:lineSpacingExtra="2sp"
+                            android:text="ore 12:54"
+                            android:textColor="#a5a5a5"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="11dp"
+                        android:layout_weight="0"
+                        android:src="@drawable/ic_baseline_account_circle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginRight="95dp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_weight="0"
+                        android:src="@drawable/ic_baseline_account_circle" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_msg_container_left"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="25dp"
+                            android:paddingVertical="18dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="13dp"
+                                android:fontFamily="@font/sofia_pro_regular"
+                                android:lineSpacingExtra="3sp"
+                                android:text="Si certamento! Ecco qui"
+                                android:textColor="#707070"
+                                android:textSize="14sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_msg_container_left_inner"
+                                android:orientation="vertical"
+                                android:paddingHorizontal="12dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/sample_pic_msg" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginBottom="12.5dp"
+                                    android:background="#ccc" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingExtra="3sp"
+                                    android:textColor="#707070"
+                                    android:textSize="14sp"
+                                    tools:text="Super sconto del 70% su tutti i nostri piani tariffari" />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="27dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="14dp"
+                                    android:background="@drawable/bg_stroke_grape_rounded_50"
+                                    android:text="Registrati ora"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/grapeDark" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sofia_pro_regular"
+                            android:lineSpacingExtra="2sp"
+                            android:text="ore 12:55"
+                            android:textColor="#a5a5a5"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_edittext_rounded" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/bg_circle_grep"
+                    android:src="@drawable/ic_send_chat" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

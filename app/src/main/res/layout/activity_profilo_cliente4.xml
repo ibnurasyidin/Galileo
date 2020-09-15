@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/dimen_15"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="31dp"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:text="Modifica dati"
+                android:textColor="@color/text_black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:lineSpacingExtra="3sp"
+                android:text="Nome e Cognome"
+                android:textColor="#b9b9b9"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/bg_ln_edittext"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:lineSpacingExtra="4sp"
+                android:text="Andrea Giordano"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="47.5dp"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:lineSpacingExtra="3sp"
+                android:text="Indirizzo di fatturazione"
+                android:textColor="#b9b9b9"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/bg_ln_edittext_nonactive"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:lineSpacingExtra="4sp"
+                android:text="Via Giare n°14, 37030 Mezzane di sotto Verona"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="47.5dp"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:lineSpacingExtra="3sp"
+                android:text="Telefono"
+                android:textColor="#b9b9b9"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/bg_ln_edittext_nonactive"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:lineSpacingExtra="4sp"
+                android:text="32 014 84 84 44"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="47.5dp"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:lineSpacingExtra="3sp"
+                android:text="Email"
+                android:textColor="#b9b9b9"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/bg_ln_edittext_nonactive"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:lineSpacingExtra="4sp"
+                android:text="andrea.giordano52@gmail.com"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="47.5dp"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:lineSpacingExtra="3sp"
+                android:text="Conto"
+                android:textColor="#b9b9b9"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/bg_ln_edittext_nonactive"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:lineSpacingExtra="4sp"
+                android:text="Aziendale"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="199.5dp"
+                android:layout_marginBottom="38dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/sofia_pro_regular"
+                    android:text="Annulla"
+                    android:textColor="@color/text_gray"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/bg_stroke_green_rounded"
+                    android:fontFamily="@font/sofia_pro_regular"
+                    android:text="Richiedi modifica"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
