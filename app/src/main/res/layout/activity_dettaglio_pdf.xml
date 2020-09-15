@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_15"
+                android:layout_marginBottom="18dp"
+                android:drawableLeft="@drawable/ic_round_arrow_back_ios_24"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:text="Modulistica"
+                android:textColor="@color/grapeDark"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_15"
+                android:layout_marginBottom="18dp"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:text="Modulo per iscrizione al pagamento"
+                android:textColor="@color/text_black_5a5a"
+                android:textSize="23sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/bg_grayf1f1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_15"
+                    android:layout_marginBottom="18dp"
+                    android:fontFamily="@font/sofia_pro_regular"
+                    android:lineHeight="19dp"
+                    android:padding="10dp"
+                    android:background="@color/white"
+                    android:paddingBottom="38dp"
+                    android:text="@string/Lorem"
+                    android:textColor="#262626"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_15"
+                    android:layout_marginBottom="18dp"
+                    android:padding="10dp"
+                    android:fontFamily="@font/sofia_pro_regular"
+                    android:lineHeight="19dp"
+                    android:background="@color/white"
+                    android:paddingBottom="38dp"
+                    android:text="@string/Lorem"
+                    android:textColor="#262626"
+                    android:textSize="11sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

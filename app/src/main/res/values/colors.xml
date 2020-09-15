@@ -7,6 +7,7 @@
 
     <color name="grapeDark">#A8A8E5</color>
     <color name="grapeLight">#eeeef9</color>
+    <color name="red">#ee6767</color>
 
     <color name="white">#FFFFFF</color>
     <color name="blackStatus">#4B4B4B</color>
@@ -15,6 +16,7 @@
     <color name="blue_gradient">#02a0c1</color>
     <color name="blue">#0D8EFF</color>
     <color name="green_gradient">#48a046</color>
+    <color name="green_button">#4ad165</color>
 
     <color name="sub_text">#bbbbbb</color>
     <color name="sub_text_grey">#787878</color>
@@ -34,7 +36,10 @@
     <color name="bg_grep">#f3f3ff</color>
     <color name="bg_red">#ff6875</color>
     <color name="bg_warning">#ffcf73</color>
-
+    <color name="bg_grayf5f5">#f5f5f5</color>
+    <color name="bg_grayf1f1">#F1F1F1</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="bacground_tran">#31373737</color>
+    <color name="color_gray">#F3F3F3</color>
 
 </resources>

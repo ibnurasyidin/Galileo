@@ -28,6 +28,13 @@
         <activity android:name=".activities.Attivazione2Activity" />
         <activity android:name=".activities.DettaglioSegnalazioniETiicket" />
         <activity android:name=".activities.ScegliITuoiPianiActivity" />
+        <activity android:name=".activities.DocumentiActivity" />
+        <activity android:name=".activities.AddebitoAutomaticoInContoActivity" />
+        <activity android:name=".activities.PagaOnlineActivity" />
+        <activity android:name=".activities.LeMieFattureActivity" />
+        <activity android:name=".activities.VerificaLaTuaLineaActivity" />
+        <activity android:name=".activities.MenuActivity"
+            android:theme="@style/Theme.Transparent"/>
 
     </application>
 
